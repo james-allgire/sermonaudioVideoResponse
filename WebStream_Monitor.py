@@ -13,8 +13,6 @@ api_key = 'xxxx'
 
 hdr = { 'X-Api-Key' : api_key,'User-Agent':str(ua.chrome)}
 req = urllib.request.Request(url, headers=hdr)
-#with urllib.request.urlopen(req) as response:
-#   the_page = response.read()
 
 with urllib.request.urlopen(req) as response:
     if response.getcode() == 200:
