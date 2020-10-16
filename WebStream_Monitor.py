@@ -11,7 +11,7 @@ ua = UserAgent()
 url = 'https://api.sermonaudio.com/v1/node/webcasts_in_progress'
 api_key = 'xxxxxxxxxxxx'
 
-hdr = { 'X-Api-Key' : api_key,'User-Agent':str(ua.chrome)}
+hdr = {'X-Api-Key' : api_key,'User-Agent':str(ua.chrome)}
 req = urllib.request.Request(url, headers=hdr)
 
 with urllib.request.urlopen(req) as response:
